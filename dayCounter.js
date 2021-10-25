@@ -11,7 +11,7 @@ let monthList = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
 let sum = (date.getDay() + +count) % 7;
 
 let resultDate = new Date(date.setDate(date.getDate() + +count));
-let newDate =  resultDate.getDate() + " / " + monthList[resultDate.getMonth()] + " / " + resultDate.getFullYear();
+let newDate =  monthList[resultDate.getMonth()] + " " +resultDate.getDate() + ", " +  resultDate.getFullYear();
 
 if(sum < 0) {
     sum = dayList.length + sum;
